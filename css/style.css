@@ -465,8 +465,7 @@ h3.my-profession {
 
 .about .about-content .timeline .timeline-item {
     position: relative;
-    padding-left: 37px;
-    padding-bottom: 50px;
+    padding: 30px;
 }
 
 .about .about-content .timeline .timeline-item:last-child {
@@ -538,6 +537,7 @@ h3.my-profession {
     padding: 30px 15px;
     text-align: center;
     transition: all 0.3S ease;
+    min-height: 320px;
 }
 
 .service .service-item .service-item-inner:hover {

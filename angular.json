@@ -60,6 +60,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/Portafolio/",
               "budgets": [
                 {
                   "type": "initial",
@@ -93,6 +94,15 @@
             }
           },
           "defaultConfiguration": "development"
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "buildTarget": "portafolio-app:build:production"
+          },
+          "configurations": {
+            "production": {}
+          }
         }
       }
     }

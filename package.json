@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:gh-pages": "ng build --configuration production",
+    "deploy": "ng deploy portafolio-app --base-href=/Portafolio/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -37,6 +39,7 @@
     "@angular/build": "^21.0.0",
     "@angular/cli": "^21.0.0",
     "@angular/compiler-cli": "^21.0.0",
+    "angular-cli-ghpages": "^3.0.2",
     "typescript": "~5.9.2"
   }
 }

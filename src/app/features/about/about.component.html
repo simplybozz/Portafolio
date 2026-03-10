@@ -1,0 +1,53 @@
+<section class="about section active" id="about" [class.open]="sectionService.isAsideOpen()">
+  <div class="container">
+    <div class="row">
+      <app-section-title title="Sobre Mí" />
+    </div>
+    <div class="row">
+      <div class="about-content padd-15">
+        <div class="row">
+          <div class="about-text padd-15">
+            <h3>Soy Angel De la Cruz, <span>Programador Full Stack</span></h3>
+            <p>Soy Angel De la Cruz, un apasionado desarrollador full stack con experiencia tanto en backend como en frontend. Me especializo en la creación de aplicaciones web robustas y eficientes, utilizando tecnologías como ASP.NET Core, JavaScript, Entity Framework, SQL Server, entre otras. Además, tengo experiencia en el diseño de interfaces modernas y funcionales garantizando una excelente experiencia de usuario.
+            <br><br>
+            Soy una persona proactiva, organizada y responsable, con excelentes relaciones interpersonales, lo que me permite colaborar efectivamente en equipos multidisciplinarios. Siempre mantengo la mejor disposición para realizar mis labores y busco constantemente desafíos que me permitan crecer profesionalmente y aportar soluciones innovadoras.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="personal-info padd-15">
+            <div class="row">
+              @for (info of personalInfo; track info.label) {
+                <div class="info-item padd-15">
+                  <p>{{ info.label }} : <span>{{ info.value }}</span></p>
+                </div>
+              }
+            </div>
+            <div class="row">
+              <div class="buttons padd-15">
+                <a href="recursos/Curriculum-Angel-de-la-Cruz.pdf" download="Curriculum" target="_blank" class="btn">Descargar CV</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="education padd-15">
+            <h3 class="title">Educación</h3>
+            <div class="row">
+              <div class="timeline-box padd-15">
+                <app-timeline [items]="education" />
+              </div>
+            </div>
+          </div>
+          <div class="experience padd-15">
+            <h3 class="title">Experiencia</h3>
+            <div class="row">
+              <div class="timeline-box padd-15">
+                <app-timeline [items]="experience" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

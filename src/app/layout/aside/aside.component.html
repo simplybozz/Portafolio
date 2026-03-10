@@ -1,0 +1,20 @@
+<div class="aside" [class.open]="sectionService.isAsideOpen()">
+  <div class="logo">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="sectionService.closeAside()"><span>B</span>ozz</a>
+  </div>
+  <div class="nav-toggler" [class.open]="sectionService.isAsideOpen()" (click)="toggleAside()">
+    <span></span>
+  </div>
+  <ul class="nav">
+    @for (item of navItems; track item.path) {
+      <li>
+        <a [routerLink]="item.path"
+           routerLinkActive="active"
+           [routerLinkActiveOptions]="{ exact: !!item.exact }"
+           (click)="sectionService.closeAside()">
+          <i class="fas fa-{{ item.icon }}"></i> {{ item.label }}
+        </a>
+      </li>
+    }
+  </ul>
+</div>

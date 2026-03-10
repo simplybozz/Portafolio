@@ -1,0 +1,20 @@
+<section class="service section active" id="services" [class.open]="sectionService.isAsideOpen()">
+  <div class="container">
+    <div class="row">
+      <app-section-title title="Servicios" />
+    </div>
+    <div class="row">
+      @for (item of services; track item.title) {
+        <div class="service-item padd-15">
+          <div class="service-item-inner">
+            <div class="icon">
+              <i class="fas fa-{{ item.icon }}"></i>
+            </div>
+            <h4>{{ item.title }}</h4>
+            <p>{{ item.description }}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

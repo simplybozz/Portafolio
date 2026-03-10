@@ -1,0 +1,5 @@
+<div class="style-switcher">
+  <div class="day-night s-icon" (click)="themeService.toggleTheme()">
+    <i class="fas" [class.fa-sun]="themeService.isDark()" [class.fa-moon]="!themeService.isDark()"></i>
+  </div>
+</div>

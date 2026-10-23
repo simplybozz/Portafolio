@@ -6,7 +6,7 @@ import { PersonalInfoItem } from '../models/personal-info.model';
 export const PERSONAL_INFO: PersonalInfoItem[] = [
   { label: 'Telefono', value: '+1 829 631 2829' },
   { label: 'Email', value: 'adelacruz6425@gmail.com' },
-  { label: 'Edad', value: '20' },
+  { label: 'Edad', value: '21' },
   { label: 'Fecha de Nacimiento', value: '6 abr 2005' },
   { label: 'Nacionalidad', value: 'Dominicana' },
   { label: 'Domicilio', value: 'Santo Domingo Este' }
@@ -67,13 +67,17 @@ export const SERVICES: ServiceItem[] = [
 ];
 
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
-  { image: 'recursos/Portafolio/1.jpg', link: 'https://simplybozz.github.io/encriptador-de-texto/' },
-  { image: 'recursos/Portafolio/2.jpg', link: 'https://simplybozz.github.io/Aventuras-Website/' },
-  { image: 'recursos/Portafolio/3.jpg', link: 'https://simplybozz.github.io/Shoes-Website/' },
-  { image: 'recursos/Portafolio/4.jpg', link: 'https://simplybozz.github.io/PixelPerfect-Website/' },
-  { image: 'recursos/Portafolio/5.jpg', link: 'https://simplybozz.github.io/Juego-Secreto/' },
-  { image: 'recursos/Portafolio/6.jpg', link: 'https://github.com/simplybozz/EvaluacionTecnica-AngelDelaCruz-11092024.git' },
-  { image: 'recursos/Portafolio/7.png', link: 'https://simplybozz.github.io/Rotation-Effect-Website/' },
+  { image: 'recursos/Portafolio/13.jpg', link: 'https://simplybozz.github.io/propuesta-OneMusicGlobal/' },
+  { image: 'recursos/Portafolio/12.jpg', link: 'https://simplybozz.github.io/paginaweb-LQMV/' },
+  { image: 'recursos/Portafolio/11.jpg', link: 'https://simplybozz.github.io/joyascriollas-redisign/#/' },
+  { image: 'recursos/Portafolio/10.jpg', link: 'https://simplybozz.github.io/egemerd-redisign/' },
+  { image: 'recursos/Portafolio/9.png', link: 'https://simplybozz.github.io/ilMusic/' },
   { image: 'recursos/Portafolio/8.png', link: 'https://simplybozz.github.io/Tic-Tac-Toe-EV/' },
-  { image: 'recursos/Portafolio/9.png', link: 'https://simplybozz.github.io/ilMusic/' }
+  { image: 'recursos/Portafolio/7.png', link: 'https://simplybozz.github.io/Rotation-Effect-Website/' },
+  { image: 'recursos/Portafolio/6.jpg', link: 'https://github.com/simplybozz/EvaluacionTecnica-AngelDelaCruz-11092024.git' },
+  { image: 'recursos/Portafolio/5.jpg', link: 'https://simplybozz.github.io/Juego-Secreto/' },
+  { image: 'recursos/Portafolio/4.jpg', link: 'https://simplybozz.github.io/PixelPerfect-Website/' },
+  { image: 'recursos/Portafolio/3.jpg', link: 'https://simplybozz.github.io/Shoes-Website/' },
+  { image: 'recursos/Portafolio/2.jpg', link: 'https://simplybozz.github.io/Aventuras-Website/' },
+  { image: 'recursos/Portafolio/1.jpg', link: 'https://simplybozz.github.io/encriptador-de-texto/' }
 ];
